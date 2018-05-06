@@ -18,11 +18,14 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -215,12 +218,76 @@
                 </div>
             </div>
         </div>
+       
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Edit Profile</button>
+
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                <h1>Edit profile</h1>
+                  
+                  
+                <form name="cForm" id="cForm" method="post" action="">
+                    <fieldset>
+
+                        <div class="form-field">
+                            <input name="cName" type="text" id="fName" class="full-width" placeholder="First Name" value="">
+                        </div>
+                        
+                        <div class="form-field">
+                            <input name="cName" type="text" id="lName" class="full-width" placeholder="Last name" value="">
+                        </div>
+                        
+                        <div class="form-field">
+                            <input name="cName" type="text" id="userName" class="full-width" placeholder="Username" value="">
+                        </div>
+                        
+                        <div class="form-field">
+                            <input name="cName" type="text" id="newPwd" class="full-width" placeholder="New Password" value="">
+                        </div>
+                        
+                        <div class="form-field">
+                            <input name="cName" type="text" id="reEnterPwd" class="full-width" placeholder="*Retype New Password" value="">
+                        </div>
+
+                        <div class="form-field">
+                            <input name="cEmail" type="text" id="eEmail" class="full-width" placeholder="Your Email" value="">
+                        </div>
+                        
+                        <div class="form-field">
+                            <input name="cEmail" type="text" id="newAddress" class="full-width" placeholder="Address" value="">
+                        </div>
+                        
+                        &nbsp;
+                        <div class="form-field">
+                            <label for="mc-email" class="subscribe-message">Change profile picture :</label>
+                            <div class="form-field">
+                                <input type="file" class="form-control" id="exampleInputFile">
+                            </div>
+                        </div>
+                        &nbsp;
+
+                        <button type="submit" class="submit btn btn--primary full-width">Save</button>
+
+                    </fieldset>
+                </form> <!-- end form -->
+                  
+                  
+              </div>
+            </div>
+          </div>
+                 
+
+
+                              
         
-        <div class="editProfile">
+        
+ <!--        <div class="editProfile" >
             <button class="edit-form">
                 <a href="popUpEdit.html">Edit Profile</a>
             </button>
-        </div>
+        </div> -->
 
     </section> <!-- s-content -->
 
