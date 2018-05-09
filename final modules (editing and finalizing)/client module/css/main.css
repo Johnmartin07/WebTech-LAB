@@ -1748,7 +1748,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header {
    position: absolute;
    text-align: center;
-   top: 30px;
+   top: 10px;
    width: 100%;
 }
 
@@ -1779,14 +1779,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
    margin: 0 0 0 6px;
    padding: 0;
    outline: 0;
-   border: none;
+   border: 0;
    -webkit-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
 
 .header__logo img {
    width: 265px;
-   height: 48px;
+   height: 68px;
 }
 
 
