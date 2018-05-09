@@ -121,63 +121,53 @@
                     </div>
                 </div> <!-- end row -->
 
-                <form name="cForm" id="cForm" method="post" action="">
-                    <fieldset>
-                        
-                        <span class="contact100-form-title">
-                            Rental Form
-                        </span>
+                <div class="col-full s-content__main">
+                    <form name="cForm" id="cForm" method="post" action="">
+                        <fieldset>
 
-                        <div class="wrap-input100 input100-select">
-                            <span class="label-input100">Units/Packages</span>
-                            <div>
-                                <select class="selection-2" name="budget">
-                                    <option>Select Units/Packages</option>
-                                    <option>Banquet Style Sound Package</option>
-                                    <option>Meeting Style Sound Package</option>
-                                    <option>Multi-participant Meeting Style Sound Package</option>
-                                </select>
+                            <h3 class="add-bottom">Rental Form</h3>
+
+                            <div>                        
+                                <div>
+                                    <label for="sampleRecipientInput">Units/Packages:</label>
+                                    <div class="cl-custom-select">
+                                        <select class="full-width" id="sampleRecipientInput">
+                                            <option>Select Units/Packages</option>
+                                            <option>Banquet Style Sound Package</option>
+                                            <option>Meeting Style Sound Package</option>
+                                            <option>Multi-participant Meeting Style Sound Package</option>
+                                        </select>
+                                    </div>
+                                </div>                        
+
+                                <div>
+                                    <label for="sampleInput">Home/Office Address:</label>
+                                    <input class="full-width" type="email" placeholder="Your Address" id="sampleInput">
+                                </div>
+
+                                <div>
+                                    <label for="sampleInput">Rental delivery time:</label>
+                                    <input class="full-width" type="email" placeholder="Rental delivery time : (ex08:30am-7:00pm)" id="sampleInput">
+                                </div>
+
+                                <div>
+                                    <label for="sampleInput">Rental date:</label>
+                                    <input class="full-width" type="email" placeholder="Rental Start Date: MM/DD/YYYY (optional)" id="sampleInput">
+                                </div>
+
+                                <label class="add-bottom">
+                                    <input type="checkbox">
+                                    <span class="label-text">Send copy to my-email</span>
+                                </label>
+
+                                <input class="btn--primary full-width" type="submit" value="SEND EMAIL">
+
+                            <!-- <iframe src="rentalForm/index.html" width="500" height="750"></iframe> -->
                             </div>
+                        </fieldset>
+                    </form> <!-- end form -->
 
-                        <div class="wrap-input100 validate-input" data-validate = "Address is required">
-                            <textarea class="input100" name="address" placeholder="Delivery Address"></textarea>
-                        </div>
-
-
-                        <div class="wrap-input100 validate-input" data-validate = "Rental delivery time  is required:">
-                            <input class="input100" id="Rental delivery time " type="text" name="Rental delivery time " placeholder="Rental delivery time : (ex08:30am-7:00pm)">
-                            <label class="label-input100" for="email">
-                                <span class="lnr lnr-envelope"></span>
-                            </label>
-                        </div>
-
-                        <div class="wrap-input100 validate-input" data-validate = "Valid date rental is required">
-                            <input class="input100" id="date rental" type="text" name="date rental" placeholder="Rental Start Date: MM/DD/YYYY (optional)">
-                            <label class="label-input100" for="email">
-                                <span class="lnr lnr-envelope"></span>
-                            </label>
-                        </div>
-
-                        <div class="contact100-form-checkbox">
-                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
-                            <label class="label-checkbox100" for="ckb1">
-                                Send copy to my-email
-                            </label>
-                        </div>
-
-                        <div class="container-contact100-form-btn">
-                            <div class="wrap-contact100-form-btn">
-                                <div class="contact100-form-bgbtn"></div>
-                                <button class="contact100-form-btn">
-                                    Send Email
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <!-- <iframe src="rentalForm/index.html" width="500" height="750"></iframe> -->
-                        </div>
-                    </fieldset>
-                </form> <!-- end form -->
+                </div> <!-- end s-content__main -->
            
             </div> <!-- end s-content__main -->
 
