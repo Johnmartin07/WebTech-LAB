@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" href="images/oie_transparent.png"/>
-    <title>Songnify - Admin Dashboard</title>
+    <title>Songnify - Payments</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Menu CSS -->
@@ -56,8 +56,8 @@
                     <!-- Logo -->
                     <a class="logo" href="index.html">
                         <!-- Logo text image you can use text also --><span class="hidden-xs">
-                        <!--This is dark logo text--><img src="" alt="home" class="dark-logo" /><!--This is light logo text--><img src="" alt="home" class="light-logo" />
-                     </span> </a>
+                        <img src="images/adminLogo.png" alt="home" class="light-logo" style="width: 92%;"/>
+                     </span></a>
                 </div>
                 <!-- /Logo -->
                 <ul class="nav navbar-top-links navbar-right pull-right">
@@ -82,7 +82,7 @@
                 </div>
                 <ul class="nav" id="side-menu">
                     <li style="padding: 70px 0 0;">
-                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
+                        <a href="payments.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Payments</a>
                     </li>
                     <li>
                         <a href="accounts.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Accounts</a>
@@ -100,31 +100,26 @@
         <!-- Page Content -->
         <!-- ============================================================== -->
         <div id="page-wrapper">
-            <div class="container-fluid">
+           <div class="container-fluid">
                 <div class="row bg-title">
                     <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                        <h4 class="page-title">Admin</h4> </div>
+                        <h4 class="page-title">Customer Payments</h4> 
+                    </div>
                     <!-- /.col-lg-12 -->
                 </div>
-
-                <!--/.row -->
-                <!--row -->
-                <!-- /.row -->
- 
-                <!-- ============================================================== -->
-                <!-- table -->
-                <!-- ============================================================== -->
+                <!-- /row -->
                 <div class="row">
-                    <div class="col-md-12 col-lg-12 col-sm-12">
+                    <div class="col-sm-12">
                         <div class="white-box">
-                            <h3 class="box-title">Recently accepted accounts</h3>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Name of registered user</th>
-                                            <th>Date account was created</th>
-                                            <th>Date account was accepted</th>
+                                            <th>Last Name</th>
+                                            <th>First Name</th>
+                                            <th>Package ID</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -132,36 +127,73 @@
                                             <td></td>
                                             <td></td>
                                             <td></td>
+                                            <td></td>
+                                            <td class="status">     
+                                                <select class="btn-rounded btn btn-default btn-outline">        
+                                                        <option value="Paid">Paid</option>
+                                                        <option value="Unpaid">Unpaid</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td></td>
                                             <td></td>
+                                            <td></td>
+                                            <td class="status">     
+                                                <select class="btn-rounded btn btn-default btn-outline">        
+                                                        <option value="Paid">Paid</option>
+                                                        <option value="Unpaid">Unpaid</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td></td>
                                             <td></td>
+                                            <td></td>
+                                            <td class="status">     
+                                                <select class="btn-rounded btn btn-default btn-outline">        
+                                                        <option value="Paid">Paid</option>
+                                                        <option value="Unpaid">Unpaid</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td></td>
                                             <td></td>
+                                            <td></td>
+                                            <td class="status">     
+                                                <select class="btn-rounded btn btn-default btn-outline">        
+                                                        <option value="Paid">Paid</option>
+                                                        <option value="Unpaid">Unpaid</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td></td>
                                             <td></td>
+                                            <td></td>
+                                            <td class="status">     
+                                                <select class="btn-rounded btn btn-default btn-outline">        
+                                                        <option value="Paid">Paid</option>
+                                                        <option value="Unpaid">Unpaid</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td></td>
                                             <td></td>
                                             <td></td>
-                                        </tr>
-                                        <tr>
                                             <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td class="status">     
+                                                <select class="btn-rounded btn btn-default btn-outline">        
+                                                        <option value="Paid">Paid</option>
+                                                        <option value="Unpaid">Unpaid</option>
+                                                </select>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -169,46 +201,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- ============================================================== -->
-                <!-- chat-listing & recent comments -->
-                <!-- ============================================================== -->
-                <div class="row">
-                    <!-- .col -->
-                    <div class="col-md-12 col-lg-8 col-sm-12">
-                        <div class="white-box">
-                            <h3 class="box-title">Client Requests</h3>
-                            <div class="comment-center p-t-10">
-                                <div class="comment-body">
-                                    <div class="user-img"> <img src="" alt="user" class="img-circle">
-                                    </div>
-                                    <div class="mail-contnet">
-                                        <h5>... ...</h5><span class="time">... ...</span>
-                                        <br/><span class="mail-desc">...</span> <a href="javacript:void(0)" class="btn btn btn-rounded btn-default btn-outline m-r-5"><i class="ti-check text-success m-r-5"></i>Approve</a><a href="javacript:void(0)" class="btn-rounded btn btn-default btn-outline"><i class="ti-close text-danger m-r-5"></i> Reject</a>
-                                    </div>
-                                </div>
-                                <div class="comment-body">
-                                    <div class="user-img"> <img src="" alt="user" class="img-circle">
-                                    </div>
-                                    <div class="mail-contnet">
-                                        <h5>... ...</h5><span class="time">... ...</span>
-                                        <br/><span class="mail-desc">...</span>
-                                    </div>
-                                </div>
-                                <div class="comment-body b-none">
-                                    <div class="user-img"> <img src="" alt="user" class="img-circle">
-                                    </div>
-                                    <div class="mail-contnet">
-                                        <h5>... ...</h5><span class="time">... ...</span>
-                                        <br/><span class="mail-desc">...</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
+            
             <footer class="footer text-center"> Copyright © Musify 2018 </footer>
         </div>
         <!-- ============================================================== -->
