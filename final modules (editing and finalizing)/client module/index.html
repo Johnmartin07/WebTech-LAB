@@ -39,29 +39,27 @@
     <section class="s-pageheader s-pageheader--home">
 
         <header class="header">
-            <div class="header__content row">
+            <div class="header__content row" style="padding-top: 20px">
 
-                <div class="header__logo">
+                <div class="header__logo" style="padding-left: 130px; ">
                     <a class="logo" href="index.html">
                         <img src="images/cbm7z-0i5cb.svg" alt="Homepage" style="object-fit: cover;">
                     </a>
                 </div> <!-- end header__logo -->
-                
-                <a class="header__search-trigger" href="#0"></a>
 
-                <div class="header__search">
-
-                    <form role="search" method="get" class="header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
-                        </label>
-                        <input type="submit" class="search-submit" value="Search">
-                    </form>
-        
-                    <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
-
-                </div>  <!-- end header__search -->
+                   
+                <div class="dropdown" style="position: relative; left: 315px">
+                <button onclick="myFunction()" onkeyup="filterFunction()" class="dropbtn">Search<img src="images/icons/png/icon-search.png" style="height: 40%"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                  </div>
+                </div>
 
                 <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
 
@@ -80,8 +78,6 @@
                             </ul>
                         </li>
                     </ul> <!-- end header__nav -->
-
-                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
 
                 </nav> <!-- end header__nav-wrap -->
 
