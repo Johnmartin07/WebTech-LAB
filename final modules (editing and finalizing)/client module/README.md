@@ -1,62 +1,66 @@
-# [Start Bootstrap - One Page Wonder](https://startbootstrap.com/template-overviews/one-page-wonder/)
+==================================================================================================
 
-[One Page Wonder](http://startbootstrap.com/template-overviews/one-page-wonder/) is a basic one page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+DESCRIPTION:
 
-## Preview
+PHILOSOPHY is a modern masonry blog website template. Its stylish design and beautiful 
+typography makes it an ideal template for your blog site. It features styles for the 
+following post formats: standard, video, audio, and gallery. It is fully responsive and retina ready 
+so It will always look great and crisp on any devices and screen sizes. It's built with clean 
+and organized code which makes it very easy to customize.
 
-[![One Page Wonder Preview](https://startbootstrap.com/assets/img/templates/one-page-wonder.jpg)](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)
+==================================================================================================
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-one-page-wonder/)**
 
-## Status
+USING THE MAILCHIMP FORM:
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-one-page-wonder/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-one-page-wonder.svg)](https://www.npmjs.com/package/startbootstrap-one-page-wonder)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-one-page-wonder.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-one-page-wonder)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-one-page-wonder?type=dev)
+To use the mailchimp form you need a mailchimp url. To get the mailchimp url, login to 
+your mailchimp account, click the list menu, click the stats download menu and select signup forms. 
+Then choose embedded forms and select naked form. In the generated form code get the value of 
+the form ACTION attribute and use it as your mailchimp url. Open the main.js file located
+in the template's "js" folder and look for this line of code: 
 
-## Download and Installation
+var cfg = {
+    scrollDuration : 800, // smoothscroll duration
+    mailChimpURL   : 'https://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e6957d85dc'   // mailchimp url
+},
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/one-page-wonder/)
-* Install via npm: `npm i startbootstrap-one-page-wonder`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-one-page-wonder.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder)
+Replace the value of mailChimpURL with your mailchimp url.
 
-## Usage
 
-### Basic Usage
+SOURCES AND CREDITS:
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+I've used the following resources as listed.
 
-### Advanced Usage
+Fonts:
+ - Metropolis Font (https://www.fontsquirrel.com/fonts/metropolis)
+ - Libre Baskerville Font (https://fonts.google.com/specimen/Libre+Baskerville)
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+Icons:
+ - Font Awesome (http://fortawesome.github.io/Font-Awesome/)
 
-## Bugs and Issues
+Stock Photos and Graphics:
+ - Unsplash.com (https://unsplash.com/)
+ - gratisography (https://gratisography.com/)
+ 
+Javascript Files:
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/one-page-wonder/).
+ - JQuery (http://jquery.com/)
+ - Modernizr (http://modernizr.com/)
+ - jQuery Placeholder (https://github.com/mathiasbynens/jquery-placeholder)
+ - pace js (http://github.hubspot.com/pace/)
+ - Masonry (http://masonry.desandro.com/)
+ - Imagesloaded (https://imagesloaded.desandro.com/)
+ - Slick Slider (http://kenwheeler.github.io/slick/)
+ - Animate On Scroll (https://michalsnik.github.io/aos/)
+ - AjaxChimp (https://github.com/scdoshi/jquery-ajaxchimp)
+ - Lity lightbox (http://sorgalla.com/lity/)
+ - Code-prettify - (https://github.com/google/code-prettify)
+ - mediaelement.js (http://mediaelementjs.com/)
 
-## Custom Builds
 
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+-------------------------------------------------------------------------------------------------------
 
-## About
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-one-page-wonder/blob/gh-pages/LICENSE) license.
