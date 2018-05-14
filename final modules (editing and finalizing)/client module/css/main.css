@@ -2936,6 +2936,15 @@ html.no-csstransitions .featured {
    padding-top: 8.4rem;
    padding-bottom: 7.2rem;
 }
+.s-category{
+   display: inline-block;
+   font-family: "metropolis-bold", sans-serif;
+   font-size: 1.1rem;
+   line-height: 2.4rem;
+   text-transform: uppercase;
+   letter-spacing: .2rem;
+   margin-bottom: 2.4rem;
+}
 
 .s-content--no-padding-bottom {
    padding-bottom: 0;
@@ -2960,6 +2969,7 @@ html.no-csstransitions .featured {
 .s-content__header .lead {
    color: rgba(0, 0, 0, 0.5);
 }
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
