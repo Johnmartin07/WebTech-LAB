@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Musify</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="icon" type="image/png" href="images/icons/oie_transparent.png"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <section class="s-pageheader s-pageheader--home">
+
+        <header class="header">
+            <div class="header__content row" style="padding-top: 20px">
+
+                <div class="header__logo" style="padding-left: 130px; ">
+                    <a class="logo" href="index">
+                        <img src="images/cbm7z-0i5cb.svg" alt="Homepage" style="object-fit: cover;">
+                    </a>
+                </div> <!-- end header__logo -->
+                   
+                <div class="dropdown" style="position: relative; left: 315px">
+                <button onclick="myFunction()" onkeyup="filterFunction()" class="dropbtn">Search<img src="images/icons/png/icon-search.png" style="height: 40%"></button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#bugdet">Budget</a>
+                    <a href="#company">Name of Company</a>
+                    <a href="#package">Name of Package</a>
+                  </div>
+                </div>
+
+                <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+                <nav class="header__nav-wrap">
+
+                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                    <ul class="header__nav">
+                        <li class="current"><a href="index" title="">Services</a></li>
+                        <li class="has-children">
+                            <a href="#0" title="">My Profile</a>
+                            <ul href="0" class="sub-menu">
+                                <li><a href="editProfile">Edit Profile</a></li>
+                                <li><a href="customerRequests">Request</a></li>
+                                <li><a href="transaction">Transaction</a></li>
+                                <li><a href="../service%2520provider%2520module/Login/index.html">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul> <!-- end header__nav -->
+
+                </nav> <!-- end header__nav-wrap -->
+
+            </div> <!-- header-content -->
+        </header> <!-- header -->
+
+
+        <div class="pageheader-content row">
+            <div class="col-full">
+
+              <div class="featured">
+
+                    <div class="featured__column featured__column--big">
+                        <div class="entry" style="background-image:url('images/thumbs/featured/featured-guitarman.jpg');">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Sound System Rental</a></span>
+
+                                <h1><a href="#0" title="">Looking for Sound System Rental that is on the go, budget friendly and has great deals? Musify is the site for you! </a></h1>
+                            </div> 
+                            
+                        </div> <!-- end entry -->
+                    </div> <!-- end featured__big -->
+
+                    <div class="featured__column featured__column--small">
+
+                        <div class="entry" style="background-image:url('images/thumbs/featured/2.jpg');">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Sound system Rental</a></span>
+
+                                <h1><a href="./ServiceProviderApplicationForm/index.html" title="">Open for all Comapany that want to be part of our Website</a></h1>
+
+                            </div> 
+                          
+                        </div> <!-- end entry -->
+
+                        <div class="entry" style="background-image:url('images/thumbs/featured/1.jpg');">
+
+                            <div class="entry__content">
+                                <span class="entry__category"><a href="#0">Equipment and other Sound System Rental</a></span>
+
+                                <h1><a href="Banquet%20Room.html" title="">Timeline of sounds.</a></h1>
+
+                            </div> <!-- end entry__content -->
+
+                        </div> <!-- end entry -->
+
+                    </div> <!-- end featured__small -->
+                </div> <!-- end featured -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end pageheader-content row -->
+
+    </section> <!-- end s-pageheader -->
+
+
+    <!-- s-content
+    ================================================== -->
+    
+    <section class="s-content">
+        
+        <div class="row masonry-wrap">
+            <div>
+             <span class="s__category"><a href="#0"> PACKAGES </a></span>
+            </div>
+            <div class="masonry">
+                
+                <div class="grid-sizer"></div>
+                
+
+                <%package.forEach(function(p){%>
+
+                <article class="masonry__brick entry format-standard" data-aos="fade-up">
+                        
+                    <div class="entry__thumb">
+                        <a href="Multi-participant Meeting Style Sound Package.html" class="entry__thumb-link">
+                            <img src="images/rentals/package1.PNG" 
+                                     alt="">
+                        </a>
+                    </div>
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            <h1 class="entry__title"><a href="Multi-participant Meeting Style Sound Package.html"><%=p.pack_name%></a></h1>
+                            
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                               <%=p.pack_desc%>
+                            </p>
+                        </div>
+                    </div>
+    
+                </article> <!-- end article -->
+                
+                <% }) %>
+
+            </div> <!-- end masonry -->
+        </div> <!-- end masonry-wrap -->
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra
+    ==================================================
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
