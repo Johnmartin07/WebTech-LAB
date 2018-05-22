@@ -157,66 +157,41 @@
                                     <td class="text-primary">
                                           *******
                                     </td>
-                                </tr>
-
-<div class="container">
+                                </tr>   
     
-    <input type="file" class="btn" id="exampleInputLogo">
                                     
-</div>
+
                                 <tr>        
                                     <td>
                                         <strong>
                                             <span class="glyphicon glyphicon-envelope text-primary"></span> 
                                             Status                                                
                                         </strong>
-                                           <div class="form-field">
-                        
-
-                        
-                        </div>
                                     </td>
                                     <td class="text-primary">  
                                     </td>
                                 </tr>
-                                                            
+                                
+                                
+                                <tr>        
+                                    <td>
+                                        <strong>
+                                            <span class="glyphicon glyphicon-envelope text-primary"></span> 
+                                            Company Logo                                              
+                                        </strong>
+                                    </td>
+                                    <td class="text-primary">
+                                    </td>
+                                </tr>                       
                             </tbody>
                         </table>
                         </div>
                     </div>
                 </div>
-        <style>
 
 
-.container {
-    position:absolute;
-    width: 100%;
-    max-width: 600px;
-}
-
-
-.container .btn {
-    position: absolute;
-    top: 100%;
-    left: 120%;
-    transform: translate(-0%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: #555;
-    color: green ;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: top;
-}
-
-.container .btn:hover {
-    background-color: black;
-}
-</style>
-<body>
-    <center>
-          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Edit Profile</button>
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" style="right: 500px">Edit Profile</button>
+        
              <div id="id01" class="w3-modal">
             <div class="w3-modal-content">
               <div class="w3-container">
@@ -254,7 +229,15 @@
                         <div class="form-field">
                             <input name="cEmail" type="text" id="newAddress" class="full-width" placeholder="*Retype New Password" value="">
                         </div>
-
+                        
+                        <div class="form-field">
+                            &nbsp;&nbsp;
+                            <p>Choose company logo:</p>
+                            <input type="file" class="btn btn--primary full-width" id="exampleInputLogo">
+                        </div>
+                            
+                        &nbsp;
+                        
                         <button type="submit" class="submit btn btn--primary full-width">Save</button>
 
                     </fieldset>
@@ -264,27 +247,14 @@
               </div>
             </div>
           </div>
-                 
-
-
-                              
-        
-        
- <!--        <div class="editProfile" >
-            <button class="edit-form">
-                <a href="popUpEdit.html">Edit Profile</a>
-            </button>
-        </div> -->
-
     </section> <!-- s-content -->      
 
     <!-- Footer -->
     <footer class="py-5 bg-black">
         <p class="m-0 text-center text-white small">Copyright &copy; Your Website 2018</p>
-      </div>
+
       <!-- /.container -->
     </footer>
 
-</body>
-
+    </body>
 </html>
