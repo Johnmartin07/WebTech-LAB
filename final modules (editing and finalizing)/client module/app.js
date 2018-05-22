@@ -67,6 +67,10 @@ app.get('/editProfile', function (req, res) {
 
 app.post('/editProfile/save:uid', function (req, res) {
 	var uid = req.params.uid;
+	db.query('UPDATE customer SET on firstname,lastname,username,email,address FROM musify.customer WHERE cust_id = ?', function (err, res) {
+		if (err) throw err;
+		console.log(res.fname + "record(s) updated");
+	})
 	 fname = req.body.fname,
 	 lname = req.body.lname,
 	 uname = req.body.uname,
@@ -75,7 +79,7 @@ app.post('/editProfile/save:uid', function (req, res) {
 	 email = req.body.email,
 	 address = req.body.address;
 	console.log(req.body);
-	res.redirect('editProfile', + fname + lname + uname + password + password + email + address);
+	res.redirect('editProfile');
 });
 
 app.get('/customerRequests', function (req, res) {
