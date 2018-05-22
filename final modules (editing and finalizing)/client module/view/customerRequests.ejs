@@ -104,18 +104,22 @@
                                             <th>Package Name</th>
                                             <th>Company Name</th>
                                             <th>Location</th>
-                                            <th>Date</th>
+                                            <th>Rent Time</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
                                             <th>Status</th>
                                             <th></th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                            <% pending.forEach(function(p){ %>
+                                          <% pending.forEach(function(p){ %>
                                         <tr>
                                             <td><%=p.pack_name%></td>
                                             <td><%=p.comp_name%></td>
-                                            <td><%=p.location%></td>
+                                            <td><%=p.location%></td> 
+                                            <td><%=p.rent_time%></td>
                                             <td><%=p.rent_startdate%></td>
+                                            <td><%=p.rent_enddate%></td>
                                             <td><%=p.rent_status%></td>
                                             <td></td>
                                             <td><input  type="submit" value="Cancel" style="padding: 3px"></td>
@@ -140,7 +144,9 @@
                                             <th>Package Name</th>
                                             <th>Company Name</th>
                                             <th>Location</th>
-                                            <th>Date</th>
+                                            <th>Rent Time</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
                                             <th>Status</th>
                                             <th></th>
                                         </tr>
@@ -151,7 +157,9 @@
                                             <td><%=a.pack_name%></td>
                                             <td><%=a.comp_name%></td>
                                             <td><%=a.location%></td> 
+                                            <td><%=a.rent_time%></td>
                                             <td><%=a.rent_startdate%></td>
+                                            <td><%=a.rent_enddate%></td>
                                             <td><%=a.rent_status%></td>
                                             <td></td>
                                             <td><input  type="submit" value="Cancel" style="padding: 3px"></td>

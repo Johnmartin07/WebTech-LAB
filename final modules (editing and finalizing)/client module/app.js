@@ -83,7 +83,7 @@ app.get('/transaction', function (req, res) {
 	})
 });
 
-//Edit profile page
+//Edit profile pages
 app.get('/editProfile', function (req, res) {
 	var uid = 5;
 
@@ -117,17 +117,7 @@ app.get('/customerRequests', function (req, res) {
 	pending = results;
 		db.query(`SELECT * FROM musify.rentals where rent_status = "accepted"`,function (err, results, fields) {
 	accepted = results;
-		db.query(`SELECT * FROM musify.rentals where rent_status = "declined"`,function (err, results, fields) {
-	declined = results;
-		db.query(`SELECT * FROM musify.rentals where rent_status = "done"`,function (err, results, fields) {
-	done = results;
-		console.log(accepted);
-		console.log(pending);
-		console.log(declined);
-		console.log(done);
-		res.render('customerRequests',{pending: pending, accepted: accepted, declined: declined, done: done});
-		})
-		})
+		res.render('customerRequests',{pending: pending, accepted: accepted});
 		})
 		})
 });
