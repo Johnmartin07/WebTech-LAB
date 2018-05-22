@@ -4385,3 +4385,19 @@ footer h4::after {
     font-size: 13px;
     width: 45%;
 }
+
+
+/* table
+* ------------------------------------------ */
+
+.table {
+         display:table;
+         margin-right:auto;
+         margin-left:auto;
+         width:100%;
+}
+
+.th {
+         display:table-cell;
+         text-align:center;
+}
