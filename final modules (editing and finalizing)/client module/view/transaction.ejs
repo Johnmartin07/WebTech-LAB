@@ -91,7 +91,8 @@
 
                         <div class="col-twelve">
 
-                            <h3>TRANSACTION</h3>
+                            <h3>Paid Transaction</h3>
+                            <p>The information on this tables are the transactions that you have paid, please check this frequently to ensure that your orders are being processed or has already processed.</p>
 
                             <div class="table-responsive">
 
@@ -104,21 +105,23 @@
                                             <th>Customer FirstName</th>
                                             <th>Location</th>
                                             <th>Rent Time</th>
-                                            <th>Date</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
                                             <th>Status</th>
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <% transaction.forEach(function(trans){ %>
+                                        <% done.forEach(function(d){ %>
                                         <tr>
-                                            <td><%=trans.pack_name%></td>
-                                            <td><%=trans.comp_name%></td>
-                                            <td><%=trans.firstname%></td>
-                                            <td><%=trans.lastname%></td>
-                                            <td><%=trans.address%></td>
-                                            <td><%=trans.rent_time%></td>
-                                            <td><%=trans.date%></td>
-                                            <td><%=trans.pay_status%></td>
+                                            <td><%=d.pack_name%></td>
+                                            <td><%=d.comp_name%></td>
+                                            <td><%=d.firstname%></td>
+                                            <td><%=d.lastname%></td>
+                                            <td><%=d.location%></td>
+                                            <td><%=d.rent_time%></td>
+                                            <td><%=d.rent_startdate%></td>
+                                            <td><%=d.rent_enddate%></td>
+                                            <td><%=d.rent_status%></td>
                                         </tr>
                                         <% }) %>
                                         </tbody>
@@ -127,6 +130,46 @@
                             </div>
 
                         </div>
+
+                        <div class="col-twelve">
+
+                            <h3>Done Transaction</h3>
+                            <p>The information on this tables are the transaction that you have done, please check this frequently to ensure that your orders are being processed or has already processed.</p>
+
+                            <div class="table-responsive">
+
+                                <table>
+                                        <thead>
+                                        <tr>
+                                            <th>Package Name</th>
+                                            <th>Company Name</th>
+                                            <th>Customer LastName</th>
+                                            <th>Customer FirstName</th>
+                                            <th>Location</th>
+                                            <th>Rent Time</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <% paid.forEach(function(p){ %>
+                                        <tr>
+                                            <td><%=p.pack_name%></td>
+                                            <td><%=p.comp_name%></td>
+                                            <td><%=p.firstname%></td>
+                                            <td><%=p.lastname%></td>
+                                            <td><%=p.location%></td>
+                                            <td><%=p.rent_time%></td>
+                                            <td><%=p.rent_startdate%></td>
+                                            <td><%=p.rent_enddate%></td>
+                                            <td><%=p.rent_status%></td>
+                                        </tr>                                        
+                                        <% }) %>
+                                        </tbody>
+                                </table>
+
+                            </div>
                     </div>
                 </fieldset>
             </form>

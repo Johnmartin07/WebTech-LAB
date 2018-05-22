@@ -38,30 +38,51 @@ app.get('/index', function (req, res) {
 
 //Packages
 app.get('/MultiparticipantMeetingStyleSoundPackage', function (req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('MultiparticipantMeetingStyleSoundPackage');
 });
 
 app.get('/Openeventspacesoundpackage', function (req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('Openeventspacesoundpackage');
 });
 
 app.get('/BanquetRoom', function(req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('BanquetRoom');	
 });
 
 app.get('/OutdoorSoundPackage', function(req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('OutdoorSoundPackage');	
 });
 
 app.get('/PanelDiscussionSoundPackage', function(req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('PanelDiscussionSoundPackage');	
 });
 
 app.get('/PressConferences', function(req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('PressConferences');	
 });
 
 app.get('/PrivateDinning', function(req, res) {
+	db.query('SELECT pack_name, pack_desc, pack_item, price FROM musify.package',function(err, results, fields) {
+		// body...
+	})
 	res.render('PrivateDinning');	
 });
 
@@ -74,12 +95,12 @@ app.get('/index/:uid', function (req, res) {
 
 //Transaction Page
 app.get('/transaction', function (req, res) {
-	db.query(`SELECT payment.*,customer.firstname,customer.lastname,customer.address,package.pack_name FROM musify.payment
-	inner join musify.package on package.pack_id = payment.pack_id
-	inner join musify.customer on customer.cust_id = payment.cust_id
-	WHERE payment.pack_id = package.pack_id and payment.pay_status = "paid"`,function (err, results, fields) {
-	// console.log(results);
-	res.render('transaction',{transaction: results});
+	db.query(`SELECT * FROM musify.rentals where rent_status = "done";`,function (err, results, fields) {
+		done = results;
+	db.query(`SELECT * FROM musify.rentals where rent_status = "paid";`,function (err, results, fields) {
+		paid = results;	
+	res.render('transaction',{done: done, paid :paid});
+	})
 	})
 });
 
@@ -88,7 +109,6 @@ app.get('/editProfile', function (req, res) {
 	var uid = 5;
 
 	db.query('SELECT firstname,lastname,username,email FROM musify.customer WHERE custid = ?',[uid],function(err,results,fields){
-		// console.log(results);
 			res.render('editProfile',{customer: results[0] });
 	})
 });
