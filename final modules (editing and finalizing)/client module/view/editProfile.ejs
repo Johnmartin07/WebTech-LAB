@@ -161,38 +161,34 @@
                 <h1>Edit profile</h1>
                   
                   
-                <form name="cForm" id="cForm" method="post" action="/editprofile2">
+                <form name="cForm" id="cForm" method="POST" action="/editProfile">
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="firstname" type="text" id="fName" class="full-width" placeholder="First Name" value=" <%= customer.firstname %>   ">
+                            <input name="firstname" type="text" id="fName" class="full-width" placeholder="First Name" value=" <%= customer.firstname %> ">
                         </div>
                         
                         <div class="form-field">
-                            <input name="lastname" type="text" id="lName" class="full-width" placeholder="Last name" value="<%= customer.lastname %>  ">
+                            <input name="lastname" type="text" id="lName" class="full-width" placeholder="Last name" value="<%= customer.lastname %>">
                         </div>
                         
                         <div class="form-field">
-                            <input name="username" type="text" id="userName" class="full-width" placeholder="Username" value="<%= customer.username %>  ">
+                            <input name="username" type="text" id="userName" class="full-width" placeholder="Username" value="<%= customer.username %>">
                         </div>
                         
                         <div class="form-field">
-                            <input name="password" type="password" id="newPwd" class="full-width" placeholder="New Password" value="<%= customer.password %>  ">
+                            <input name="password" type="password" id="newPwd" class="full-width" placeholder="New Password" value="<%= customer.password %>">
                         </div>
                         
                         <div class="form-field">
-                            <input name="password" type="password" id="reEnterPwd" class="full-width" placeholder="*Retype New Password" value="<%= customer.password %>  ">
+                            <input name="password" type="password" id="reEnterPwd" class="full-width" placeholder="*Retype New Password" value="<%= customer.password %>">
                         </div>
 
                         <div class="form-field">
                             <input name="email" type="text" id="email" class="full-width" placeholder="Your Email" value="<%= customer.email %>  ">
                         </div>
-                        
-                        <div class="form-field">
-                            <input name="address" type="text" id="newAddress" class="full-width" placeholder="Address" value="<%= customer.address %>  ">
-                        </div>
 
-                        <button type="submit" class="submit btn btn--primary full-width" method="post" action="/editprofile2">Save</button>
+                        <button type="submit" class="submit btn btn--primary full-width">Save</button>
 
                     </fieldset>
                 </form> <!-- end form -->
