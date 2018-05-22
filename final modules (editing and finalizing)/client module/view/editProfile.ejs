@@ -138,19 +138,7 @@
                                     <td class="text-primary">
                                         <%= customer.email %>  
                                     </td>
-                                </tr>
-
-                                <tr>        
-                                    <td>
-                                        <strong>
-                                            <span class="glyphicon glyphicon-envelope text-primary"></span> 
-                                            Address                                                
-                                        </strong>
-                                    </td>
-                                    <td class="text-primary">
-                                        <%= customer.address %>  
-                                    </td>
-                                </tr>                                    
+                                </tr>                                 
                             </tbody>
                         </table>
                         </div>
@@ -173,19 +161,19 @@
                 <h1>Edit profile</h1>
                   
                   
-                <form name="cForm" id="cForm" method="post" action="/editprofile">
+                <form name="cForm" id="cForm" method="post" action="/editprofile2">
                     <fieldset>
 
                         <div class="form-field">
-                            <input name="fname" type="text" id="fName" class="full-width" placeholder="First Name" value=" <%= customer.firstname %>   ">
+                            <input name="firstname" type="text" id="fName" class="full-width" placeholder="First Name" value=" <%= customer.firstname %>   ">
                         </div>
                         
                         <div class="form-field">
-                            <input name="lname" type="text" id="lName" class="full-width" placeholder="Last name" value="<%= customer.lastname %>  ">
+                            <input name="lastname" type="text" id="lName" class="full-width" placeholder="Last name" value="<%= customer.lastname %>  ">
                         </div>
                         
                         <div class="form-field">
-                            <input name="uname" type="text" id="userName" class="full-width" placeholder="Username" value="<%= customer.username %>  ">
+                            <input name="username" type="text" id="userName" class="full-width" placeholder="Username" value="<%= customer.username %>  ">
                         </div>
                         
                         <div class="form-field">
@@ -204,7 +192,7 @@
                             <input name="address" type="text" id="newAddress" class="full-width" placeholder="Address" value="<%= customer.address %>  ">
                         </div>
 
-                        <button type="submit" class="submit btn btn--primary full-width">Save</button>
+                        <button type="submit" class="submit btn btn--primary full-width" method="post" action="/editprofile2">Save</button>
 
                     </fieldset>
                 </form> <!-- end form -->
